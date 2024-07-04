@@ -15,13 +15,13 @@ let currentPosition = 0;
 // Função para ir para a imagem anterior
 function prevImage() {
   currentPosition -= imageWidth;
-  carouselInner.style.transform = translateX(${currentPosition}px);
+  carouselInner.style.transform = translateX({currentPosition});
 }
 
 // Função para ir para a imagem seguinte
 function nextImage() {
   currentPosition += imageWidth;
-  carouselInner.style.transform = translateX(${currentPosition}px);
+  carouselInner.style.transform = translateX({currentPosition});
 }
 
 // Adiciona eventos de clique aos controles do carrossel
