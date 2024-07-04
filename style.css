@@ -1,1 +1,44 @@
-
+/* Estiliza o container do carrossel */
+.carousel-container {
+    position: relative;
+    width: 500px; /* largura do carrossel */
+    height: 300px; /* altura do carrossel */
+    overflow: hidden;
+  }
+  
+  /* Estiliza as imagens do carrossel */
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Estiliza os controles do carrossel */
+  .carousel-prev,.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+  }
+  
+  .carousel-prev {
+    left: 10px;
+  }
+  
+  .carousel-next {
+    right: 10px;
+  }
